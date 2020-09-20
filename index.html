@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Checkout page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  <body>
+
+<!-- payment process -->
+<div class="stepwizard">
+    <div class="stepwizard-row">
+        <div class="stepwizard-step">
+            <button type="button" class="btn btn-primary btn-circle">1</button>
+            <p>Cart</p>
+        </div>
+        <div class="stepwizard-step">
+            <button type="button" class="btn btn-primary btn-circle">2</button>
+            <p>Shipping</p>
+        </div>
+        <div class="stepwizard-step">
+            <button type="button" class="btn btn-primary btn-circle">3</button>
+            <p>Payment</p>
+        </div>
+        <div class="stepwizard-step">
+            <button type="button" class="btn btn-outline-secondary btn-circle" disabled="disabled">4</button>
+            <p>Review</p>
+        </div>
+    </div>
+</div>
+
+<h4>Payment details:</h4>
+<!-- Order summary -->
+<div class="ordertitle">
+  <h4 class="widget-title">Order Summary</h4>
+</div>
+<div class="widget">
+                        <div class="summary-block">
+                            <div class="summary-content">
+                                <div class="summary-head"><h7 class="summary-title order1">Plum face cream</h7></div>
+                                <div class="summary-price">
+                                  <div class="plum">
+                                    <img style="width:100px;height:auto;" src="images/plum.jpg" alt="image">
+                                  </div>
+                                    <p class="summary-text">- 1 + =$29</p>
+                                    <!-- <div class="minus1">
+                                      <p>-</p>
+                                    </div>
+                                    <div class="minus2">
+                                      <p>-</p>
+                                    </div> -->
+                                    <!-- <span class="summary-small-text pull-right">1 month</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary-block">
+                            <div class="summary-content">
+                               <div class="summary-head"> <h7 class="summary-title">Cream</h7></div>
+<div class="cream">
+  <img style="width:100px;height:auto;" src="images/cream.jpg" alt="image">
+</div>
+                                <div class="summary-price">
+                                    <p class="summary-text">- 1 + =$229</p>
+                                    <!-- <span class="summary-small-text pull-right">1 month</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary-block total">
+                            <div class="summary-content">
+                               <div class="summary-head"> <h5 class="summary-title">Total</h5></div>
+                                <div class="summary-price">
+                                    <p class="summary-text">Sub total=  <span class="price">$258</span></p>
+                                    <p class="summary-text">Tax=  <span class="price">$19</span></p>
+                                    <p class="summary-text">Shipping=  <span class="price">$0</span></p>
+
+                                    <p class="summary-text" style="font-weight: bolder;">Order total=  <span class="price">$277</span></p>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+<!-- card details -->
+    <div class="card">
+
+<!-- card number -->
+<form>
+  <div class="cardnum">
+    <p>Card Number</p>
+  </div>
+    <div class="input-group mb-3 num">
+
+      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Debit/Credit Card Number">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default"><i class="far fa-credit-card icon"></i></span>
+      </div>
+    </div>
+
+    <!-- Expiry date -->
+<div class="cardexp">
+   <p>Card Expiration:</p>
+</div>
+      <div class="row exp">
+        <div class="col mcol">
+          <select name='expireMM' id='expireMM'>
+              <option value=''>Month</option>
+              <option value='01'>January</option>
+              <option value='02'>February</option>
+              <option value='03'>March</option>
+              <option value='04'>April</option>
+              <option value='05'>May</option>
+              <option value='06'>June</option>
+              <option value='07'>July</option>
+              <option value='08'>August</option>
+              <option value='09'>September</option>
+              <option value='10'>October</option>
+              <option value='11'>November</option>
+              <option value='12'>December</option>
+          </select>
+        </div>
+        <div class="col ycol">
+          <select name='expireYY' id='expireYY'>
+              <option value=''>Year</option>
+              <option value='20'>2020</option>
+              <option value='21'>2021</option>
+              <option value='22'>2022</option>
+              <option value='23'>2023</option>
+              <option value='24'>2024</option>
+              <option value='25'>2025</option>
+
+          </select>
+          <!-- <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4"/> -->
+        </div>
+      </div>
+
+
+<!-- cvv -->
+    <div class="form-group">
+            <label class="col-sm-3 control-label cvv" for="cvv">Card CVV</label>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" name="cvv" id="cvv" placeholder="CVV">
+            </div>
+          </div>
+
+<!-- card holdername -->
+<div class="form-group">
+        <label class="col-sm-3 control-label name" for="card-holder-name">Name on Card</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="Card Holder's Name">
+        </div>
+
+<!-- paynow -->
+<div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9 pay">
+          <button type="button" class="btn btn-success">Pay Now</button>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+
+</body>
+</html>

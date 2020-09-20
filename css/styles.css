@@ -1,0 +1,170 @@
+body{
+  background-color: #b2ebf2;
+}
+h4{
+  margin-left: 50px;
+  line-height: 5px;
+  margin-top: 40px;
+}
+
+/* cardborder */
+.card{
+  margin: 50px;
+  width: 800px;
+  background-color: #00bcd4;
+}
+/* cardform */
+form{
+  font-size: 1rem;
+  margin-left: 30px;
+}
+/* cardnum */
+.cardnum{
+  margin-left: 18px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.icon{
+  color: blue;
+}
+/* cardexp */
+.cardexp{
+  margin-left: 18px;
+  margin-bottom: 10px;
+}
+/* num line */
+.num{
+  width: 550px;
+  margin-left: 18px;
+  /* margin-right: 50px; */
+}
+
+/* expiry date */
+#expireMM{
+  width:100px;
+}
+#expireYY{
+  width:100px;
+}
+.mcol{
+  margin-left: 18px;
+}
+.ycol{
+  position: relative;
+  right: 290px;
+}
+
+/* cvv */
+.cvv{
+  margin-top:15px;
+  margin-bottom: 15px;
+}
+
+#cvv{
+  margin-left: 0px;
+}
+/* name on card */
+.name{
+  margin-bottom: 15px;
+}
+/* pay */
+.pay{
+  margin-left: 395px;
+  margin-top: 30px;
+}
+/* payment process */
+body{margin:40px;}
+
+.stepwizard-step p {
+    margin-top: 10px;
+}
+
+.stepwizard-row {
+    display: table-row;
+}
+
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 800px;
+    height: 1px;
+    background-color: black;
+    z-order: 0;
+    left:100px;
+}
+
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+/* order summary */
+.ordertitle{
+  width:400px;
+  position: absolute;
+    margin-right: 0;
+    left: 900px;
+    top: 125px;
+}
+.price{
+}
+.widget{
+  text-align: center;
+  border-width: thin;
+  border-style:groove;
+  width:300px;
+  position: absolute;
+    margin-right: 100px;
+    right: 0px;
+    top:215px;
+/* padding-left: 30px; */
+background-color: white;
+}
+.total{
+  /* border:1px solid; */
+  background-color: #ade498;
+}
+.order1{
+  margin-top: 30px;
+}
+.summary-block{
+  border: 1px solid;
+}
+.minus1{
+  width:30px;
+  height:30px;
+  position: relative;
+  background-color: grey;
+}
+.minus2{
+  width:30px;
+  height:30px;
+  position: relative;
+  left: 50px;
+  bottom: 50px;
+  background-color: grey;
+}
